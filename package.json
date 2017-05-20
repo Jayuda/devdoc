@@ -1,0 +1,24 @@
+{
+  "name": "DEVDOC",
+  "version": "0.0.1",
+  "description": "Simple Documentations for developer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/jayuda/devdoc",
+  "keywords": [
+    "Electron",
+    "docdev.io",
+    "tutorial",
+    "programmer",
+    "developer",
+    "Documentations"
+  ],
+  "author": "Y.N Pamungkas Jayuda",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "pack": "electron-packager . $npm_package_productName --icon=icon.png && npm run codesign",
+  "build": "npm run pack"
+}
