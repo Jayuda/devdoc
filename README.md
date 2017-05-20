@@ -19,7 +19,26 @@ npm install
 npm start
 ```
 
+
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+
+## To Build
+
+### MAC OS
+```
+electron-packager ../DEVDOC/ DEVDOC --overwrite --icon=icons/icon.icns
+```
+
+### UBUNTU
+```
+electron-packager . --overwrite --platform=linux --arch=x64 --icon=icons/png/256X256.png --prune=true
+```
+
+### WINDOWS
+```
+electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=icons/win/icon.ico --version-string.CompanyName=JayudaCE --version-string.FileDescription=JayudaCE --version-string.ProductName=\"Developer Documentations\"
+```
+
 
 ## Resources for Learning Electron
 
